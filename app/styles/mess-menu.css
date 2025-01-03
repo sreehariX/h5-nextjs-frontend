@@ -1,0 +1,63 @@
+.mess-menu-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .menu-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .menu-day {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+  }
+  
+  .menu-items {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .meal-time {
+    color: white;
+  }
+  
+  .meal-time h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .meal-time p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+  }
+  
+  .meal-time ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .meal-time li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .mess-menu-content {
+      padding: 1rem;
+    }
+    
+    .menu-card {
+      padding: 1rem;
+    }
+  }

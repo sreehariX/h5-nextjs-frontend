@@ -1,0 +1,149 @@
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    background-color: #D2D2D2;
+    background-image:
+    repeating-linear-gradient(
+        to right, transparent 0 100px,
+        #25283b22 100px 101px
+    ),
+    repeating-linear-gradient(
+        to bottom, transparent 0 100px,
+        #25283b22 100px 101px
+    );
+}
+
+.banner .slider {
+    position: absolute;
+    width: 800px;
+    height:350px;
+    top: 40%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(1500px);
+    animation: carousel-spin 20s linear infinite;
+    z-index: 2;
+}
+
+@keyframes carousel-spin {
+    from {
+        transform: translate(-50%, -50%) perspective(1500px) rotateX(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) perspective(1500px) rotateX(-360deg);
+    }
+}
+
+.banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateX(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(300px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.banner .slider .item .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.banner .slider .item .image-wrapper img {
+    border-radius: 20px;
+}
+
+.banner .content {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, 100vw);
+    text-align: center;
+    z-index: 1;
+}
+
+.banner .content h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(4rem, 12vw, 9rem);
+    line-height: 1em;
+    color: #66FCF1;
+    position: relative;
+    margin: 0;
+}
+
+.banner .content h1::after {
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+}
+
+.banner .content .author {
+    font-family: 'Carrois Gothic', sans-serif;
+    text-align: right;
+    max-width: 200px;
+    color: #FFFFFF;
+}
+
+.banner .content h2 {
+    font-size: 3em;
+    color: #66FCF1;
+}
+
+@media screen and (max-width: 1023px) {
+    .banner .slider {
+        width: 600px;
+    }
+    
+    .banner .slider .item {
+        transform: 
+            rotateX(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(250px);
+    }
+    
+    .banner .content h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 7em;
+    }
+    
+    .banner .content .author {
+        max-width: unset;
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner .slider {
+        width: 300px;
+        top: 35%;
+    }
+    
+    .banner .slider .item {
+        transform: 
+            rotateX(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(200px);
+    }
+    
+    .banner .content h1 {
+        font-size: clamp(3rem, 10vw, 7rem);
+    }
+    .banner .content {
+        bottom: 8%;
+    }
+}

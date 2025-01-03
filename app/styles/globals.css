@@ -1,0 +1,106 @@
+:root {
+  --primary: #4ADEDE;
+  --background: #0B0B3B;
+  --text: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --overlay: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.loading-screen {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.loading-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.loading-title {
+  font-size: 4rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.loading-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.loading-text {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.loading-bar {
+  width: 300px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.loading-progress {
+  height: 100%;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.loading-status {
+  color: var(--primary);
+  font-size: 0.875rem;
+}
+
+.canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.bg-navy-900 {
+  background-color: #0B0B3B;
+}
+
+.bg-navy-800 {
+  background-color: #0F0F4F;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+

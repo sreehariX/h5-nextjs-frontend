@@ -20,13 +20,29 @@ const exampleQuestions = [
   "Why is H5 called penthouse?"
 ];
 
+interface Source {
+  url: string;
+}
 
-let sessionMessages = [
+interface Message {
+  role: 'user' | 'ai';
+  content: string;
+  sources?: Source[];
+}
+
+let sessionMessages: Message[] = [
   { 
     role: 'ai', 
     content: "👋 Hi! I'm your H5 assistant. Note: Please verify important information with hostel staff." 
   }
 ];
+
+const spinningAnimation = `
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+`;
 
 const ThinkingAnimation = () => {
   const [elapsedTime, setElapsedTime] = useState(0);
@@ -59,7 +75,7 @@ const ThinkingAnimation = () => {
 
 const MessageContent = ({ content, sources }: { 
   content: string, 
-  sources?: Array<{url: string, title: string}> 
+  sources?: Source[] 
 }) => (
   <div className={inter.className} style={{ 
     display: 'flex', 
@@ -166,11 +182,12 @@ const SendButton = ({ onClick, disabled }: { onClick: () => void, disabled: bool
 const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
   const [query, setQuery] = useState('');
   // Use session messages instead of creating new state each time
-  const [messages, setMessages] = useState(sessionMessages);
+  const [messages, setMessages] = useState<Message[]>(sessionMessages);
   const [isInitialState, setIsInitialState] = useState(sessionMessages.length === 1);
   const [isThinking, setIsThinking] = useState(false);
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const lastMessageRef = useRef<HTMLDivElement>(null);
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1024);
 
   useEffect(() => {
     if (messages.length > 1 && lastMessageRef.current) {
@@ -190,7 +207,23 @@ const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
       }
     `;
     document.head.appendChild(style);
-    return () => document.head.removeChild(style);
+    
+    const cleanup = () => {
+      if (style && style.parentNode) {
+        style.parentNode.removeChild(style);
+      }
+    };
+    
+    return cleanup;
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const handleSearch = async (exampleQuery: string | null = null) => {
@@ -198,7 +231,7 @@ const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
     if (!searchQuery?.trim()) return;
     
     setIsInitialState(false);
-    setMessages(prev => [...prev, { role: 'user', content: searchQuery }]);
+    setMessages(prev => [...prev, { role: 'user' as const, content: searchQuery }]);
     setQuery('');
     setIsThinking(true);
 
@@ -223,8 +256,8 @@ const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
         index === self.findIndex((s) => s.url === source.url)
       );
 
-      const aiMessage = { 
-        role: 'ai', 
+      const aiMessage: Message = { 
+        role: 'ai' as const, 
         content: data.response,
         sources: uniqueSources 
       };
@@ -232,8 +265,8 @@ const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
       
     } catch (error) {
       console.error('Error:', error);
-      const aiMessage = { 
-        role: 'ai', 
+      const aiMessage: Message = { 
+        role: 'ai' as const, 
         content: "Sorry, I'm having trouble connecting right now. Please try again later." 
       };
       setMessages(prev => [...prev, aiMessage]);
@@ -244,6 +277,7 @@ const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
 
   return (
     <>
+      <style>{spinningAnimation}</style>
       {/* Backdrop overlay */}
       <div
         style={{
@@ -273,16 +307,12 @@ const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
             maxHeight: '600px',
             backgroundColor: '#000033',
             borderRadius: '15px',
-            padding: '20px',
+            padding: windowWidth <= 768 ? '15px' : '20px',
             display: 'flex',
             flexDirection: 'column',
             boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
             zIndex: 1000,
-            margin: '20px',
-            '@media (max-width: 768px)': {
-              padding: '15px',
-              margin: '10px'
-            }
+            margin: windowWidth <= 768 ? '10px' : '20px'
           }}
           onClick={(e) => e.stopPropagation()}
         >
@@ -314,7 +344,7 @@ const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
             >×</button>
           </div>
 
-          {/* Chat messages container */}
+        
           <div 
             ref={chatContainerRef}
             style={{ 

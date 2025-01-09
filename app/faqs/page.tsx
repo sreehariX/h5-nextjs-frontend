@@ -133,7 +133,7 @@ const faqData: FAQItem[] = [
 
 const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
-  const categories = [...new Set(faqData.map(item => item.category))]
+  const categories = Array.from(new Set(faqData.map(item => item.category)))
 
   return (
     <MainLayout>

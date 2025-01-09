@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  
+![h5-logo](public/images/common/H5_Logo_Transparent.png)
 
-## Getting Started
+[H5 Website] | [Hosting] | [Getting Started]
+</div>
 
-First, run the development server:
+This is the main source code repository for [H5 Website]. It contains both the Next.js frontend application and FastAPI backend server code.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[H5 Website]: https://h5-nextjs-frontend.vercel.app/
+[Getting Started]: #quick-start
+[Hosting]: #hosting
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Why H5 Website?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Modern Stack:** Built with Next.js 14 and FastAPI, offering server-side rendering and efficient API handling
+- **AI Assistant:** Integrated Gemini AI for intelligent hostel-related queries
+- **Interactive UI:** Framer Motion animations, responsive design, and dark mode support
+- **Vector Search:** ChromaDB for efficient information retrieval
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Quick Start
 
-## Learn More
+1. Clone the repository
+2. Follow the [Installation Guide](#installation)
+3. Start developing with `npm run dev` for frontend and `uvicorn main:app --reload` for backend
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
+- Node.js (v18+)
+- Python (v3.8+)
+- Gemini API key
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
+### Frontend Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone & Navigate**
+   ```bash
+   git clone https://github.com/sreehariX/h5-nextjs-frontend.git
+   cd h5-nextjs-frontend
+   ```
 
-## Deploy on Vercel
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Start Development Server**
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Access the Application**
+   - Open your browser and visit: `http://localhost:3000`
+  
+
+### Backend Setup
+
+1. **Navigate to Backend Directory**
+   ```bash
+   cd h5website-backend
+   ```
+
+2. **Create & Activate Virtual Environment**
+   ```bash
+   # Windows
+   python -m venv venv
+   .\venv\Scripts\activate
+
+   # macOS/Linux
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Configure Environment Variables**
+   Create a `.env` file in the backend root directory:
+   ```env
+   GEMINI_API_KEY=your_gemini_api_key
+   ```
+
+5. **Start Development Server**
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+6. **Verify Installation**
+   - API will be running at: `http://localhost:8000`
+
+
+## Features
+
+- **AI Chat Assistant**: Get instant answers about hostel facilities, rules, and events
+- **Interactive UI**: Smooth animations and responsive design
+- **Vector Search**: Efficient information retrieval using ChromaDB
+- **Markdown Support**: Rich text formatting for announcements and FAQs
+
+## Tech Stack
+
+- **Frontend**: Next.js 14, Framer Motion, TailwindCSS
+- **Backend**: FastAPI, ChromaDB, Gemini AI
+- **Styling**: CSS Modules, TailwindCSS
+- **Animations**: Framer Motion
+- **AI**: Google Gemini API
+
+## Hosting 
+
+### frontend
+- Frontend is currently hosted on vercel will be hosted on gymkhana.iitb.ac.in server soon
+
+
+### backend
+- For chatbot we are using chromadb,gemini api and fastapi
+- The fastapi is running on a azure vm
+- It is configured using apache server
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

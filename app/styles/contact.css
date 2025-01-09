@@ -1,107 +1,199 @@
 /* styles/contact.css */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carrois+Gothic+SC&display=swap');
 
-.contact-wrapper {
-  padding: 2rem;
-  text-align: center;
-  color: white;
+:root {
+  --text-primary: rgba(255, 255, 255, 0.9);
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --role-color: rgba(255, 255, 255, 0.5);
 }
 
-.contact-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  letter-spacing: 2px;
-}
-
-.team-title {
-  font-family: 'Carrois Gothic SC', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
-}
-
-.contact-text {
-  color: #ccc;
-  margin-bottom: 3rem;
-}
-
-.team-container {
-  max-width: 1200px;
+.contact-page {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  color: var(--text-primary);
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.top-row, .bottom-row {
-  display: flex;
-  justify-content: center;
+.contact-header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.contact-header h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.team-grid {
+  display: grid;
   gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.top-row {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.middle-row {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.middle-row:last-child {
   margin-bottom: 2rem;
 }
 
-.member-box {
-  width: 250px;
-  height: 250px;
-  background-color: #40A2A6;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 1.5rem;
-  position: relative;
-  overflow: hidden; 
-  transition: transform 0.3s ease;
-}
-
-.member-box:hover {
-  transform: scale(1.05); 
-}
-
-.member-box h3 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.member-box p {
-  margin: 0.5rem 0 0 0;
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-.contact-icons {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  opacity: 0; 
-  transition: opacity 0.3s ease;
-}
-
-.member-box:hover .contact-icons {
-  opacity: 1; 
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-  background: #000;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+@media (max-width: 1200px) {
+  .middle-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .top-row, .bottom-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  .team-grid {
+    margin-bottom: 3rem;
   }
   
-  .member-box {
-    width: 100%;
-    max-width: 250px;
+  .top-row,
+  .middle-row {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 4rem;
   }
+}
+
+@media (max-width: 480px) {
+  .top-row,
+  .middle-row {
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 280px;
+}
+
+.member-image-container {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  border-radius: 15px 50px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 50px;
+  transform-origin: center;
+}
+
+.member-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.member-role {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 1rem;
+  color: var(--role-color);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+.member-socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(169, 171, 178, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: var(--primary-color);
+  color: var(--text-primary);
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 15px 50px;
+  z-index: 10;
+}
+
+.contact-icon-wrapper.bottom {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.overlay-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  z-index: 20;
+}
+
+.contact-detail {
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.85rem;
+  z-index: 30;
+  white-space: nowrap;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
 }

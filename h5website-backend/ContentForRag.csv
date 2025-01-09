@@ -1,0 +1,419 @@
+url,content,token_count,char_count,pagename
+http://localhost:3000/home,"""Welcome to the beating heart of student life at IIT Bombay where camaraderie meets academic excellence, and every corridor echoes with the spirit of innovation. Welcome to Hostel 5, your home away from home. Located within the vibrant campus of the prestigious Indian Institute of Technology Bombay, Hostel 5 stands as more than just a residence; it's a community, a home away from home for students from diverse backgrounds and disciplines. With a rich history spanning decades, Hostel 5 has been a cornerstone of student life, fostering academic excellence, camaraderie, and personal growth. At Hostel 5, our mission is simple yet profound: to provide an inclusive and nurturing environment where every resident can thrive academically, socially, and personally. We strive to cultivate a culture of respect, collaboration, and innovation, empowering our residents to pursue their passions, excel in their studies, and make meaningful contributions to society.""",175,960,Home
+http://localhost:3000/messmenu,"""Meal Timings - Weekdays: Breakfast: 7:30 AM to 9:45 AM, Lunch: 12:00 Noon to 2:15 PM, Tiffin: 4:30 PM to 6:15 PM, Dinner: 7:30 PM to 9:45 PM. Weekends: Breakfast: 8:00 AM to 10:00 AM, Lunch: 12:00 Noon to 2:15 PM, Tiffin: 4:30 PM to 6:15 PM, Dinner: 7:30 PM to 9:45 PM. MONDAY (06-01-2025) - BREAKFAST: Kanda Poha, Sev + Tari, Boiled Chana, BBJ, Milk, Tea/Coffee, Boiled Egg/Egg Burji, Chocos / Cornflakes, Banana, Bournvita+ Paneer Bhurji. LUNCH: Coriander Rice, Dal Fry, Rajma Masala, Aloo Flower, Roti, Fryums, Carrot + Beetroot, Peanut Chutney, Curd + Sambhar, Nibu Pani. SNACKS: Fried Maggi, Banana Shake, BBJ, Tea/Coffee. DINNER: Lemon Rice, Dal Tadka, Dum Aloo Gravy, Tawa Veg, Roti, Carrot + Beetroot. SWEET EXTRAS: Pineapple Sheera, Paneer Handi. TUESDAY (07-01-2025) - BREAKFAST: Puri Bhaji, Boiled Chawli, BBJ, Milk, Tea/Coffee, Boiled Egg/Egg Burji, Musli / Oats, Banana, Bournvita+ Paneer Bhurji. LUNCH: Lemon Rice, Moong Dal, Kabuli Chana Masala, Lauki Sabji, Roti, Potato Chips, Black Chana Chaat, Pudina Chutney, Rasam, Chaas. WEDNESDAY (08-01-2025) - BREAKFAST: Onion Uttapam, Sambhar + Chutney, Boiled Corn, BBJ, Milk, Tea/Coffee, Boiled Egg/Omlette, Cornflakes / Oats, Banana, Bournvita+ Paneer Bhurji. LUNCH: Tamarind Rice, Plain Dal, Bhandara Sabji, White Bhopla Dry, Roti, Fried Papad, Cucumber + Carrot + Onion, Thecha, Sambhar, Rasna. SNACKS: Cheese Burger, Orange, BBJ, Tea/Coffee. DINNER: Jeera rice, Dal Makhni, Malai Kofta, Kadoo Methi Dry, Roti, Cucumber + Carrot. SWEET EXTRAS: Moong Dal Halwa, Butter Chicken Masala. THURSDAY (09-01-2025) - BREAKFAST: Mix Veg Paratha, Dahi + Ketchup, Matki Sprouts, BBJ, Milk, Tea/Coffee, Boiled Egg/Omlette, Chocos / Cornflakes, Banana, Bournvita+ Paneer Bhurji. LUNCH: Geera Rice, Dal Fry, Chole Bhature, Aloo Dum, Roti, Fried Papad, Cucumber+ Beetroot, Tomato Chutney, Rasam, Lassi. SNACKS: Veg Mayonnaise Sandwich, Guava, BBJ, Tea/Coffee. DINNER: Veg Biryani, Dal Lahsooni, Mix Veg Masala, Soyabean Chilly Dry, Roti + Raita, Cucumber+ Beetroot. SWEET EXTRAS: Ice cream, Paneer Kolhapuri. FRIDAY (10-01-2025) - BREAKFAST: Rava Idli + Medu Vada, Groundnut Chutney, Mix Sprouts, BBJ, Milk, Tea/Coffee, Boiled Egg/Egg Burji, Musli / Oats, Banana, Bournvita+ Paneer Bhurji. LUNCH: Tomato Rice, Plain Dal, Mashroom Masala, Bhindi Dry, Roti, Roasted Papad, Beetroot + Carrot, Thecha, Curd + Sambhar, Jal Jeera. SNACKS: Samosa Chat, Musk Melon, BBJ, Tea/Coffee. DINNER: Fried Rice, Tomato Dal, Veg Manchurian Gravy, Aloo China Dry, Roti, Cucumber + Carrot. SWEET EXTRAS: Coconut Barfi, Lollipop. SATURDAY (11-01-2025) - BREAKFAST: Aloo Paratha, Dahi + Ketchup, Peanuts Boiled, BBJ, Milk, Tea/Coffee, Boiled Egg/Omlette, Chocos / Cornflakes, Banana, Bournvita+ Paneer Bhurji. LUNCH: Curd Rice, Chana Dal, Veg Kolhapuri, Gobi 65, Roti, Fryums, Carrot+ Beetroot + Onion, Tomato Chutney, Rasam, Ice Tea. SNACKS: Misal pav, Pomogranate, BBJ, Tea/Coffee. DINNER: Tawa Pulav, Toor Dal, Vatana Utsal, Baigan Bharta, Roti, Corn Salad. SWEET EXTRAS: Kalakhand, Chicken Biryani. SUNDAY (12-01-2025) - BREAKFAST: Masala Dosa, Sambhar + Chutney, Moong Sprout, BBJ, Milk, Tea/Coffee, Boiled Egg/Egg Burji, Musli / Oats, Banana, Bournvita+ Paneer Bhurji. LUNCH: Ghee Rice, Dal Haryali, Nimona, Mix Veg, Roti, Potato Chips, Sev Chaat, Peanut Chutney, Sambhar, Chhas. SNACKS: Dahi puri, Orange, BBJ, Tea/Coffee. DINNER: Plain Rice, Dal Fry, Paneer Aachari, Zunka, Naan, Black Chana Chaat. SWEET EXTRAS: Rasgulla, Fish Fry. NOTES: * lemon+chilli+salt+pickle will be there at both lunch and dinner * Peanut butter at Snacks on every Monday and Thursday * Omelette/Half Fry/Full Fry at Snacks for Rs.20 * Bournvita everyday in Breakfast""",1330,3677,Messmenu
+http://localhost:3000/faqs,"""FAQs About Hostel-5
+❖
+History of hostel 5, when was hostel 5 built?
+➢
+The name of hostel 5 is given from a sex magazine named Penthouse. It was built in 1958. It is one of the oldest hostel of iitb. Back then it was single sharing room.
+❖
+When was hostel 5 renovated?
+➢
+The renovation of hostel 5 was completed in 2022 and it was inaugurated on 22nd July 2022.
+➢
+Since its establishment, it has physically expanded its infrastructure manifold. Over the next few months, the alumni of H-5 will build enhancements that will improve the quality of life in the hostel.</p><p>The project is a joint initiative between the Institute and IIT Bombay Alumni Association. It has been made possible by a robust fund-raising exercise by the H-5 alumni of the Institute across batches. The eldest donor alumnus is from the Class of 1964 and the youngest from the Class of 2019. The project execution team is also entirely comprised of alumni from H-5.</p><p>The groundbreaking was done on June 21 by the Director Prof. Subhasis Chaudhuri and several H5 alumni including Mr. Dhananjay Saheba, Mr. Suhas Mehta, Mr. Ajit Jawle, Mr.Nandkumar Nemade, Mr. Nitin Doshi, Mr. Raja Deshpande and IITB Alumni Association Chairman Mr. Girish Nayak.</p><p>The project is led by Dhananjay Saheba, a 1977 alumnus from Electrical Engineering Department at IIT Bombay. Speaking about the initiative, Mr. Saheba said, “Hostel life played a critical role in our education and development. It’s where we formed some of the deepest and most meaningful friendships of our lives. We have come together from around the world and across batches to do something meaningful for the future generations of our hostel mates. The support extended to us by the Institute has been exemplary”.</p><p>Prof. Subhasis Chaudhuri, Director, IIT Bombay said, “It is my privilege and great pleasure to have launched a truly-pioneering project to build enhancements at Hostel Number 5 (H-5).Current H-5 students have expressed keen interest in these enhancements, as they will significantly improve quality of hostel life. The infrastructure enhancement will go a long way to further the wellbeing of the brightest young minds in the country. It is true to the Institute’s mission to create an ambience in which new ideas, research and scholarship flourish and from which the leaders and innovators of tomorrow emerge”.</p>
+➢
+
+
+H5 Enhancement Project
+Completion Report
+IIT Bombay Alumni Association
+
+1
+It is my pleasure and privilege to report the successful completion of the H5 Enhancement Project. A pioneering project at IITB conceived, funded, and executed by the alumni of H5. A powerful testimonial to the transformative power of the time, talent, and treasure donated by alumni to the alma mater.
+This report is dedicated to the memory of Speedy (G. Kumar, C’77,). He initiated the project in 2019. His impeccable choice of invitees for the first meeting brought together the core project team.
+Genesis
+Abhijit Gadgil (C’77,) visited the campus on Foundation Day 2019 and posted pictures of the hostel in a WhatsApp group. The appalling state of the hostel resulted in a huge hue and cry that something had to be done. Speedy organized a meeting of H5 alumni from the 70s and 80s and Project H5 Enhancement began.
+Ajit Jawle (C’77) visited the hostel, talked to the students, and developed an eminently feasible plan, which would improve the quality of life in the hostel – a tower in each of the three wings of the hostel which would effectively double the number of showers and toilets on every floor of every wing of the hostel, and two modern study rooms in the open spaces between the wings. The estimated cost of the project was Rs. 3.5 crores.
+2
+I, then Chairman IITBAA, approached Prof. Suhas Joshi, then Dean, ACR with a request to allow the alumni of H5 to raise funds for and execute the project. The Institute, after due consideration, graciously agreed.
+Governance
+An MoU was signed between the IITBAA and the Institute. In essence, IITBAA would raise funds in partnership with IITBHF and enter into all contracts and issue corresponding purchase orders for the implementation of the proposed plan. Excess funds, if any, would be used for the structural rehabilitation of the hostel. On behalf of the Institute Dean ACR and Dean IPS, or their nominees, would oversee the project.
+An MoU was also signed between IITBAA, Knexir Consultants (Ajit Jawle) responsible for design, SMC Infrastructure (Suhas Mehta, C’83) responsible for construction, and a representative of H5 alumni (Raja Deshpande C’77) delineating roles and responsibilities.
+All contract negotiations, including pricing were spearheaded by Knexir Consultants. An independent auditor was contracted on behalf of the AA to inspect and certify the work was done in accordance with the contract prior to payment of invoices. Thus, industry standard practices were followed in the implementation of all aspects of the project.
+Fundraising
+Shortly after the signing of the MoUs in March 2020 the pandemic struck and everything ground to a halt. In October 2020, the students’ council of the hostel approached Ajit Jawle wanting to know the status of the proposed project. A fund raising team of Ajit Jawle, Anil Kshirsagar, Abhijit Gadgil, Dhananjay Saheba, G. Kumar (Speedy), Milind Dhupkar, Raja Deshpande, Rajeev Deshpande, Shashank Kulkarni, Sreedhar Kona, Suhas Mehta, Vinay Karle, Uday Nadkarni, et al sprang into action. An email campaign was launched and virtual meetings were held with several classes. Most importantly, Suhas Mehta committed to completing the project even if funds were not collected in time. The first contribution came on Nov. 14, 2020, from Vinay Karle (C’96, President IITBHF) and the floodgates opened. Over the next roughly four months, there were a total of 102 donations in the US and 60 donations in India. The eldest donor was from the Class of 1964 and the youngest of the Class of 2019.
+On Foundation Day 2021, Suhas Mehta and I had the privilege of presenting the Institute a ceremonial cheque and the project was off and running.
+A list of the donors is shown in Attachment 1 (in alphabetical order by first name, the count of donors does not match the number of donations since a few donors made multiple donations).
+3
+Project Implementation
+Once the funding was secured, BMC permissions for the planned work were secured. The implementation of the design developed by Knexir started in June 2021. The pandemic provided one blessing – there were no students in the hostel during the construction.
+The construction of the toilet blocks and two study rooms was undertaken by SMC Infrastructure (Suhas Mehta). The air conditioning and communications networking were handled by Nandkishore Nemade (C’82).
+Along the way, not surprisingly, there were a few glitches. A memorable one - there is a peru (guava) tree behind the middle wing of the hostel, which would have had to be removed to be able to put up the associated toilet block. The circumference of the trunk put it in a class where it could not be touched without permission from the BMC. The team came up with a simple and effective solution – rotate the toilet block by 90o! The toilet block was redesigned, approvals were obtained from the BMC, and the project continued. The peru tree is thriving, adds wonderful character to the hostel, and is a great example of preservation of the environment!
+Nitin Doshi (C’79) specialising in structural restoration stepped forward to lead the structural rehabilitation of the hostel. Golden Civil, a company Nitin has worked with and recommended, was assigned the repair work of the hostel with negotiated rates for various aspects. The work was completed within budget.
+In July 2022, the hostel was handed over to the Institute and once again populated with students.
+There were still significant funds left over and additional improvements were undertaken. The play areas were improved with a basketball court and a cricket pitch. An existing, dilapidated study room was refurbished and a room above was refurbished and turned into a practice area for cultural activities. These common areas were also decorated with photographs submitted by alumni across the Institute: Chandrashekhar Sardesai (DhandaNot) (H6,
+4
+C’84,), Nikhil Gurjar (H6/H8, C’97), Kiran R. Ambardekar (H8, C’84), and me.
+Funds Utilization
+Funds have been utilized as follows (all numbers are in INR):
+
+Conclusion
+The Institute recognized the significant value of the project by conferring the Distinguished Service Award to Ajit Jawle, Suhas Mehta, Nitin Doshi, and Nandkishore Nemade.
+The success of the project gave the impetus to the Institute, IITBAA, and IITBHF to launch Project Evergreen – a world-class complex of three hostels, two for men and one for women, housing over 1100 students at an estimated cost of nearly Rs. 200 crore.
+On behalf of Team H5 Enhancement Project, a big thank you to
+·
+The Institute – the Director, Deputy Directors, Deans, faculty, the Estate Office, and IIT-B DRF for their wholehearted support.
+·
+IITBAA and IITBHF for their unstinting support – fundraising, legal, admin, …
+·
+The numerous alumni of H5 for their amazing support with their time, talent, and treasure.
+·
+The current residents – future alumni – of H5 who have made all our efforts worthwhile!
+It is rumoured that H5 has become a spa with students of other hostels visiting to use the showers! On a more serious note, students have appreciated the study rooms and opined that such study rooms should be there in every hostel.
+On a recent visit to Project Evergreen, Nandan Nilekani remarked that the paradigm for building infrastructure at the Institute has changed.
+Please spread the word among your fellow alumni to support Project Evergreen!
+Dhananjay Saheba, C’77
+Advisor, IITBAA
+Director, IITB DRF (Development and Relations Foundation)
+H5 Alumni at the Distinguished Services Award Ceremony 2022
+Left to right: Ravindra Dabholkar, Bharat Koli, Dilip Ganeriwal, Nitin Doshi, Nandkishore Nemade, Suhas Mehta, Sabhajeet Singh, Ajit Jawale, Dhananjay Saheba
+6
+1964
+Vijay Kanetkar
+1966
+Jitendra Saxena, Laxminarayana Iyengar
+1967
+Cyrus Mehta, Raj Gupta, Ramakant Indap, Satish Joshi, Vijay Kulkarni
+1968
+Sailesh Kapadia
+1970
+Anil Ketkar, Arvind Parkhe, Gurudutt Trasy, Krishna Mocherla Rao, Ruyintan Mehta
+1971
+Dilip Bhagwat, Sankar Muthukrishnan
+1972
+Ajay Trivedi, Chandrashekhar Vaidya, Deepak Sabnis, Dinesh Arya, Gurudatt Ullal, Pralhad Dabholkar, Ramachandran Krishnaswamy, Vivek Shiroor, Yogen Dalal
+1973
+Sharukh Doctor
+1974
+Subhash S. Kithany
+1975
+Anil Kshirsagar, Kalyan Malshe, Kiran Pradhan, Prabir Poddar, Pradeep Shirodkar, Prem Kumar Uppaluru, Rajeev Ohol, Rajendra Oak, Rajiv Munde, Satish Thatte, Subhash Tantry, Sunil Bagwe, Suresh Madhavan
+1977
+Abhijit Gadgil, Aniruddha Nagarkar, Ashok Ekbote, Ashutosh Joshi, Atul Kanagat, Dhananjay Saheba, Gourang Mulay, Harsha Nevatia, M S Ganesh, Madhav Karmarkar, Shirish Sohoni, Noorali Sonawalla, Pradeep Dhobale, Raghunath Raghavan, Rajeev Deshpande, Rajendra Palnitkar, Rajiv Joshi, Sanjay Altekar, Sanjay Sherikar, Sanjeev Rege, Pramod Khargonekar, Shashank Kulkarni, Shrikrishna Gokhale, Subbrao Deshpande, Subhash Karkare, Subodh Shukla, Sunil Karve, Umesh Asaikar, Vijay Phatarphekar
+(Bhavin Patel, Dr. Sheela Chokshi (non IITians))
+1978
+Kedarnath Sant, Nitin Uplekar, Pankaj Desai, Pankaj Doshi, Prakash Rao, Sameer Shah, Shashank Inamdar, Uday Nadkarni, Vijay Parekh
+1980
+Nirmalendu Jajodia, Sharad Vasudev Prabhu
+1981
+Advait Mogre
+1982
+Ajei Gopal, Allwyn Carvalho, Deepak Madhukar Karmarkar, Dilip Ganeriwala, Mahesh Bapaye, milind yedkar, Narakesari Narayandas, Nitin Anturkar, Nitin Dhond, Pramod Kumar Manekchand Jain, Ravindra Dabholkar, Ravindra Shevade, Shrikrishna Karkare, Subramanian Iyer, Sushil Pawar, Uday Deshmukh, Vijay Iyengar, Vivek Sagdeo
+1983
+Rahul Vora, Suhas Mehta
+Attachment 1: List of Donors
+7
+1984
+Jaideep Mukherji, Kaizad Mistry, Mohan S. Deshmukh
+1985
+Ashwin Kalbag, Manjunath Prabhu, Milind Jog
+1987
+Chintamani Palsule, Deepak Deshpande
+1988
+Girish Nair, Kamal Akhtar, Mahesh Narayan, Manoj Bhalerao, Srinivas Kondapalli
+1989
+Bruno Sequeira
+1990
+Mohammed Dohadwala
+1992
+Sumit Mathur
+1993
+Arun Limaye, Milind Nanal
+1994
+Niranjan Talwalkar, Sumukh Pathare
+1996
+Ravi Shanker Vemuri, Sheru Chowdhry, Subba Kondubhatla, Vinay Karle
+1997
+Bala Chandrasekharan, Pramod Gosavi, Rahul Jain, Rohit Grover, Sarang Wagholikar, Siddharth Bhatia, Sreedhar Kona, Vishnu Ram Venkataraman
+1998
+Nishant Kumar, Shailendra Singh, Sharad Goenka, Shrikanth Shetty
+1999
+Anil Billapati, Rupesh Shelar, Sidharth Kapileshwar
+2000
+Ankit Garg, Srinivas Nandiraju
+2001
+Kumar Aditya
+2003
+Lakshmikant Shrinivas
+2008
+Dwaipayan Dasgupta, Shashank Neelam
+2009
+Ankur Jain
+2017
+Aditya Kusupati
+2018
+Bharat Thakkar, Vivek Pandit
+2019
+Anandamoy Mukhopadhyay
+8
+IIT Bombay Alumni Association
+(IITBAA)
+1st Floor Gulmohar Building,
+IIT Bombay, Powai, Mumbai,
+Maharashtra 400076
+alumni.iitbaa@iitbombay.org
+
+
+
+
+❖
+Till when is female entry allowed in hostel?
+➢
+Female entry is allowed from 7am to 10pm inside the hostel. Student(boy) has to give his ID card to security and register the name of the person in the female register book for entry.
+➢
+Female can visit common room, sports room, music room, mess and canteen 24/7.
+❖
+How to access Tech room of hostel 5?
+➢
+Tech room is room no. 1, 2 in A wing ground floor. Only hostel 5 students can access tech room via fingerprint registered by them.
+➢
+Student can use all the equipments present in tech room but they are not allowed to take them out of tech room. If found they’ll be fined.
+➢
+Student can use power tools under mechanical section of tech room after taking permission of technical seceratories, there should be a valid reason to use power tools.
+➢
+Students can take microcontroller from electrical section after taking permission from technical secretaries.
+❖
+What are the things/equipments available in tech room?
+➢
+
+
+item(gyroscope mpu 6050) - quantity(4) - inside(2 sare manual same box me hai)
+item(ardino uno r3) - quantity(1) - inside(1)
+item(ardino mega) - quantity(1) - inside(1)
+item(esp 32 wifi 30pin) - quantity(5) - inside(3)
+item(esp 32 wifi 38pin) - quantity(1) - inside(1)
+item(sound sensor) - quantity(1) - inside(0)
+item(I2C module for lcd) - quantity(1) - inside(0)
+item(RF module) - quantity(2) - inside(1)
+item(servo tester) - quantity(2) - inside(1)
+item(timer IC) - quantity(4) - inside(2)
+item(bluetooth module) - quantity(4) - inside(2)
+item(battery 9 volte) - quantity(13) - inside(10)
+item(9 volte battery connector) - quantity(11) - inside(6)
+item(ultra sonic sensor) - quantity(4) - inside(2)
+item(buck converter) - quantity(1) - inside(0)
+item(boost) - quantity(1) - inside(0)
+item(buck boost) - quantity(1) - inside(0)
+item(relays IC) - quantity(5) - inside(3)
+item(fingerprint sensor) - quantity(2) - inside(1)
+item(buzzer) - quantity(1) - inside(0)
+item(ACS 152 current sensor) - quantity(2) - inside(0)
+item(LCD screen) - quantity(4) - inside(2)
+item(7 segment display) - quantity(22) - inside(0)
+item(solenoid) - quantity(1) - inside(0)
+item(micro usb data cable) - quantity(1) - inside(0)
+item(aurdino data cable) - quantity(1) - inside(0)
+item(RFID) - quantity(4) - inside(2)
+item(duracell big) - quantity(5) - inside(3)
+item(duracell small) - quantity(4) - inside(0)
+item(solder wire) - quantity(3) - inside(2)
+item(wire stripper) - quantity(2) - inside(1)
+item(wire twizer) - quantity(4) - inside(2)
+item(jumper wire) - quantity(3) - inside(3 set)
+item(berg pin) - quantity(3) - inside(0 set)
+item(resistor stet) - quantity(1) - inside(0)
+item(capasitor set) - quantity(1) - inside(0)
+item(electrolytic capacitor set) - quantity(1) - inside(0)
+item(soldering flux) - quantity(2) - inside(0)
+item(PCB) - quantity(4) - inside(1)
+item(solder station) - quantity(1) - inside(0)
+item(solder iorn) - quantity(2) - inside(0)
+item(power supply aplab) - quantity(2) - inside(0)
+item(electronin vernier caliper) - quantity(1) - inside(1)
+item(12 volt adapter) - quantity(2) - inside(2)
+item(5 volt adapter) - quantity(1) - inside(1)
+item(battery charger) - quantity(1) - inside(1)
+item(12 volt battery 1.3 ah) - quantity(7) - inside(7)
+item(12 volt batter 18 ah) - quantity(2) - inside(2)
+item(procimity sensor) - quantity(2) - inside(1)
+item(roboshield) - quantity(2) - inside(1)
+item(msp 432 microcontroler) - quantity(3) - inside(3 launch pad)
+item(servo moter) - quantity(8) - inside(6)
+item(server share) - quantity(1) - inside(1)
+item(solar cell) - quantity(1) - inside(1)
+item(dso) - quantity(1) - inside(extra pins, cd and manual warenty card is with aayush)
+item(afg) - quantity(1) - inside(0)
+item(voltage converter) - quantity(3) - inside(3 ac to dc)
+item(555 timer IC) - quantity(10) - inside(0)
+item(LM741) - quantity(5) - inside(0)
+item(TL084) - quantity(5) - inside(0)
+item(7402) - quantity(10) - inside(0)
+item(7400) - quantity(5) - inside(0)
+item(7404) - quantity(5) - inside(0)
+item(7408) - quantity(5) - inside(0)
+item(7432) - quantity(5) - inside(0)
+item(7486) - quantity(5) - inside(0)
+item(voltage regulator 9v) - quantity(5) - inside(0)
+item(voltage regulator 12) - quantity(5) - inside(0)
+item(pot 1k) - quantity(10) - inside(0)
+item(pot 5k) - quantity(10) - inside(0)
+item(pot 10k) - quantity(10) - inside(0)
+item(reciver) - quantity(1) - inside(0)
+item(high duty extention box) - quantity(1) - inside(0)
+item(infinite extention box) - quantity(1) - inside(0)
+item(3 plug) - quantity(2) - inside(2)
+item(2 plug) - quantity(1) - inside(1)
+item(extension board) - quantity(2) - inside(2)
+item(insulation tape) - quantity(6) - inside(4)
+item(pen drive) - quantity(2) - inside(2 32,64)
+item(dmm) - quantity(2) - inside(1)
+item(breadboard) - quantity(5) - inside(3)
+item(pla material 3d printing) - quantity(2) - inside(2)
+item(hot glue gun) - quantity(2) - inside(1 small)
+item(angle grinder) - quantity(1) - inside(1)
+item(wood cutter) - quantity(1) - inside(1)
+item(wood stapler) - quantity(1) - inside(1)
+item(wd 40 greasing) - quantity(1) - inside(0)
+item(screw driver set) - quantity(1) - inside(1)
+item(hacksaw) - quantity(1) - inside(1)
+item(hand saw) - quantity(1) - inside(1)
+item(axe) - quantity(1) - inside(1)
+item(tool kit) - quantity(1) - inside(0)
+item(double side tape) - quantity(2) - inside(1)
+item(scissors) - quantity(2) - inside(1)
+item(marker) - quantity(5) - inside(2)
+item(stapler with pins) - quantity(1) - inside(1)
+item(panna of angle grinder) - quantity(1) - inside(1)
+item(saw blade) - quantity(7) - inside(7)
+item(wood cutter bits) - quantity(6) - inside(6)
+item(amsil epoxy putty) - quantity(2) - inside(2)
+item(leveler) - quantity(1) - inside(1)
+item(cello tape) - quantity(3) - inside(1big big+2)
+item(fevicol) - quantity(1) - inside(0)
+item(synthetic adhesive) - quantity(1) - inside(1)
+item(lock) - quantity(2) - inside(not specified)
+
+
+
+❖
+How to access music room and sports room?
+➢
+Both of them are located inside the mess area and can be accessed by registered fingerprint of hostel 5 student only, however non h5 students can also play in there.
+➢
+Sports equipments can be accessed by security guard after registering student name and giving ID card to the guard.
+❖
+Where to make maintenance related complaints?
+➢
+For complaints related to carpentry work, electric repairment,LAN issues and issues related to individual rooms, kindly submit your complaints on support.lith.ac.in
+➢
+PHO concerns are critical and require immediate attention. If you notice any instances of uncleanliness, promptly inform a nearby PHO worker and request that they address the issue as soon as possible.
+❖
+Emergency contacts:
+➢
+Electrical issues:
+▪
+2182-For complaints between 11pm to 7am
+▪
+7977-For complaints between 7 am to 11 am
+➢
+Hospital: 7051
+➢
+Quick Response Team +91 98333 38989
+❖
+What are options for student Laundry?
+➢
+Washing machines are dryers are available in washrooms of every alternate wing which can be used free of cost.
+➢
+There is a laundry house situated behind the kitchen area. The laundry person charges 20 bucks for 10 clothes or equivalent. It is open during the day time for all the week days (timing may vary).
+❖
+How the Mess rebate process work?
+➢
+Eligibility and Limits: You can apply for a rebate for a minimum of 3 consecutive days at a time. The cumulative sum of rebate days cannot exceed 15 days per semester. Ensure that you meet these criteria before proceeding.
+➢
+Application Process:
+➢
+Visit the billing counter and inform the Mess Supervisor that you wish to apply for a rebate.
+➢
+Make sure to notify the Mess Supervisor before 2 PM on the day preceding your planned rebate period.
+➢
+Per day mess charges are Rs155 multiplied by the number of days you rebate will be credited to your bank account after the semester ends.
+❖
+How to opt-out from mess?
+➢
+Write a mail to mess councilor of hostel 3 days before the mess starts or a week before new semester begins.
+➢
+A list of opt-out students will be made by mess councilor and it will be given to hall manager and mess manager.
+➢
+30% of monthly mess bill will be deducted from SMA(semester mess advance) for the infrastructural cost and the remaining will be credited to your bank account after the semester ends.
+❖
+Where to make mess related complaints?
+➢
+Register Your Complaint: Write your complaint in the complaint/suggestions register located at the billing counter. Be sure to include your name, roll number, date, time, and a detailed description of the complaint in the respective columns.
+➢
+Document Evidence: Simultaneously, take a clear photo or video that demonstrates the nature of your complaint. Make sure the evidence includes proof of the date and time to ensure authenticity.
+➢
+Submit Video Proof: Send the video evidence to the mess councilor
+➢
+Following this procedure will help us address your concerns more effectively and provide the necessary evidence when implementing any fines.""",6026,21911,FAQs
+http://localhost:3000/sports,"""KHO KHO GC FINALS: H5vs H3 
+Join us at the Kho Kho Finals as H5 takes on H3 in an electrifying match!
+
+Date: 29th October
+Time: 7:00 pm
+Venue: Kho-Kho Court
+
+ H5 is just one step away from securing their 2ND GOLD of the year!
+
+COME ONE, COME ALL!
+Cheer on H5 as they battle for the championship title! Your energy and support can make all the difference. Let's fill the stands with H5 spirit!
+
+ Let's bring home the GOLD! 
+
+Don't miss this thrilling finale! Free up your evening, gather your friends, and get ready to cheer H5 to victory!
+
+See you there!
+
+Add this in sports page
+
+""" ,153,579,Sports 
+
+
+http://localhost:3000/culturals,"""Hola!! We are excited to  announce the opportunity for all to participate in the  Inter-Hostel 2D Fine Arts  General Championship  GC ! We're looking for passionate individuals who love creating art , whether it’s through dry media (pencil, pen, color pencil, charcoal, soft pastel, and oil pastel) or wet media (watercolor, poster color, oil paint, and acrylic paint) and proudly represent our Hostel 5 . 
+If you're an artist at heart or simply want to explore your creativity, this is your chance to join our vibrant art community. Plus, all necessary equipment will be provided by the hostel !
+ To join , simply click on the link below to be a part of the WhatsApp group and get ready to represent Hostel 5 with pride!
+https://chat.whatsapp.com/FgktVLbW4QgA8eD6NfO6q3
+
+🧛 Hostel 5 , it's Showtime! 🧛‍♀️
+🎃Come cheer for our stars at the tonight!🎃
+
+📅 Time: 9:00 pm
+🏛️ Venue: OAT (old sac) 
+
+ Our performace will be starting soon. 
+Let’s bring the energy and show our H5 spirit! 
+
+#H5Pride #HalloweenGC
+
+""",267,1007,Culturals
+
+
+
+
+
+http://localhost:3000/technicals,"""🛠️🏆 *Attention Hostellers!* 🏆🛠️  
+
+Fill out the form if you are interested in participating in the *Rube Goldberg Machine General Championships*! 🎉 Show off your creativity and engineering skills by building the most imaginative and complex contraptions to complete a simple task. 🌀⚙️  
+
+Link:https://forms.gle/7QBKVWjRLgzY7d8b8
+
+To kick things off, we'll be having an *ideation and open discussion* on *18th October at 9:30 PM* in the *Tech Room, Hostel 5*. Join us to brainstorm, share ideas, and get inspired! 💡🔧  
+
+For any queries, contact:  
+Aditya Agarwal (9065130206)  
+Adnan Shaikh (7776992436)  
+
+Let’s make things unnecessarily complicated, just for fun! 😄
+
+Tackle climate change by designing a carbon capture solution for a real industrial setup! 🏭🌱 Strategize on energy-efficient, renewable tech and craft a cost-saving solution that puts our hostel at the top! 🚀💪
+
+📝 Problem Statement: Create a multi-tech carbon capture plan. Justify your tech choices, calculate costs, and use renewable energy sources.
+
+https://docs.google.com/document/d/1gWxTOjVFXp81Y9hFosrJAWOJDMjfO-bK0NaiLYhDLlo/edit?usp=sharing
+
+🗓️ Registration Deadline: Oct 31st, 11:59 PM
+🗓️ Submission Deadline: Nov 5th, 11:59 PM
+
+📲 DM me your roll number and full name to register your team!
+Let’s lead the charge and show everyone what our hostel is made of! 🏆""",378,1354,Technicals
+

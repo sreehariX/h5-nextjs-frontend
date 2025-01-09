@@ -1,8 +1,8 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import MainLayout from '../components/MainLayout'
 import '../styles/home.css'
 import Link from 'next/link'
@@ -11,6 +11,11 @@ import CardsSection from '../components/CardsSection'
 const titles = ["HOSTEL 5", "PENTHOUSE", "INSTI\u00A0KA\u00A0BAAP"]
 
 export default function HomePage() {
+  const containerRef = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  })
   const [titleIndex, setTitleIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
   const [text, setText] = useState('')
@@ -54,13 +59,17 @@ export default function HomePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <Image
-                src="/images/common/H5_Logo_Transparent.png"
-                alt="Hostel 5"
-                fill
-                style={{ objectFit: 'contain' }}
-                priority
-              />
+              <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <Image
+                  src="/images/common/H5_Logo_Transparent.png"
+                  alt="Hostel 5"
+                  fill
+                  style={{ 
+                    objectFit: 'contain'
+                  }}
+                  priority
+                />
+              </div>
             </motion.div>
 
             <motion.div 
@@ -149,7 +158,9 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      <CardsSection />
+      <div className="cards-section-wrapper" ref={containerRef}>
+        <CardsSection />
+      </div>
     </MainLayout>
   )
 }

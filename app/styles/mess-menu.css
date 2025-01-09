@@ -1,63 +1,259 @@
-.mess-menu-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
+.mess-menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+}
+
+.mess-menu-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mess-menu-header h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, var(--primary-color), #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timings-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.timing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.timing-grid h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.timing-grid p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.days-nav, .meals-nav {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.day-btn, .meal-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.day-btn:hover, .meal-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.day-btn.active, .meal-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.menu-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.menu-items {
+  display: grid;
+  gap: 1rem;
+}
+
+.menu-notes {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.menu-notes p {
+  margin: 0.5rem 0;
+}
+
+.days-navigation {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(200px, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.days-navigation::-webkit-scrollbar {
+  display: none; 
+}
+
+.day-tab {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.day-tab.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.day-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.day-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.day-date {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.meals-navigation {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.meal-tab {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.meal-tab:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.meal-tab.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.meal-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.meal-name {
+  font-weight: 600;
+}
+
+.meal-extra {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* Update menu items display */
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.menu-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mess-menu-container {
+    padding: 1rem;
   }
-  
-  .menu-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+
+  .timing-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
-  
-  .menu-day {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 0.5rem;
+
+  .days-nav, .meals-nav {
+    padding: 0.5rem;
   }
-  
-  .menu-items {
-    display: grid;
-    gap: 2rem;
-  }
-  
-  .meal-time {
-    color: white;
-  }
-  
-  .meal-time h3 {
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-  }
-  
-  .meal-time p {
+
+  .day-btn, .meal-btn {
+    padding: 0.6rem 1rem;
     font-size: 0.9rem;
-    opacity: 0.7;
-    margin-bottom: 1rem;
   }
-  
-  .meal-time ul {
-    list-style: none;
-    padding: 0;
+
+  .menu-card {
+    padding: 1rem;
   }
-  
-  .meal-time li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  .menu-card h2 {
+    font-size: 1.4rem;
   }
-  
-  @media (max-width: 768px) {
-    .mess-menu-content {
-      padding: 1rem;
-    }
-    
-    .menu-card {
-      padding: 1rem;
-    }
+
+  .days-navigation {
+    grid-auto-columns: minmax(150px, 1fr);
   }
+
+  .meal-tab {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}

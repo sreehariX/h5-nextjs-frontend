@@ -1,5 +1,7 @@
 'use client'
 
+
+// incase if we need threejs
 import { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 
@@ -21,7 +23,6 @@ export default function LoadingBackground() {
     renderer.setClearColor(0x000000, 0)
     mountRef.current.appendChild(renderer.domElement)
 
-    // glow dots
     const createGlowingDots = () => {
       const geometry = new THREE.BufferGeometry()
       const positions = []
@@ -37,7 +38,6 @@ export default function LoadingBackground() {
         const isCorner = Math.random() < 0.3
 
         if (isCorner) {
-          // Corner clusters
           x = (Math.random() < 0.5 ? -1 : 1) * (3.5 + Math.random())
           y = (Math.random() < 0.5 ? -1 : 1) * (2 + Math.random())
         } else {
@@ -64,7 +64,7 @@ export default function LoadingBackground() {
         const mixedColor = color1.clone().lerp(color2, gradientFactor)
         colors.push(mixedColor.r, mixedColor.g, mixedColor.b)
 
-        // Varying sizes with some larger dots
+        
         sizes.push(Math.random() < 0.2 ? Math.random() * 0.15 + 0.05 : Math.random() * 0.05 + 0.02)
       }
 
@@ -83,7 +83,6 @@ export default function LoadingBackground() {
           void main() {
             vColor = color;
             vec3 pos = position;
-            // Subtle floating movement
             pos.x += sin(time * 0.2 + position.y) * 0.02;
             pos.y += cos(time * 0.2 + position.x) * 0.02;
             vec4 mvPosition = modelViewMatrix * vec4(pos, 1.0);
@@ -107,7 +106,6 @@ export default function LoadingBackground() {
       return new THREE.Points(geometry, material)
     }
 
-    // Create connecting lines
     const createConnectingLines = (points: THREE.Points) => {
       const positions = points.geometry.attributes.position.array
       const linePositions = []
@@ -162,7 +160,6 @@ export default function LoadingBackground() {
 
     camera.position.z = 5
 
-    //  mouse interaction
     const mouse = new THREE.Vector2()
     const targetRotation = new THREE.Vector2()
     
@@ -176,7 +173,6 @@ export default function LoadingBackground() {
 
     window.addEventListener('mousemove', handleMouseMove)
 
-    // Animation
     let frame: number
     const animate = () => {
       frame = requestAnimationFrame(animate)

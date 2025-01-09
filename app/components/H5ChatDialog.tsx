@@ -236,7 +236,7 @@ const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
     setIsThinking(true);
 
     try {
-      const response = await fetch(process.env.NEXT_BACKEND_API as string, {
+      const response = await fetch('https://fastapiv1.centralindia.cloudapp.azure.com/query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

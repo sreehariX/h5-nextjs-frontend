@@ -119,4 +119,4 @@ This is the main source code repository for [H5 Website]. It contains both the N
 
 ## License
 
-TNot yet decided will be soon
+Not yet decided will be soon

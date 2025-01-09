@@ -119,10 +119,11 @@ const MessageContent = ({ content, sources }: {
             style={{ 
               color: '#66fcf1',
               textDecoration: 'underline',
-              '&:hover': {
-                opacity: 0.8
-              }
+              opacity: 1,
+              transition: 'opacity 0.2s ease'
             }}
+            onMouseEnter={(e) => e.currentTarget.style.opacity = '0.8'}
+            onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
           >
             {source.url}
           </a>
@@ -320,15 +321,17 @@ const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
               flexGrow: 1, 
               overflowY: 'auto', 
               marginBottom: '20px',
-              
-              '&::-webkit-scrollbar': {
-                display: 'none'
-              },
-             
-              msOverflowStyle: 'none',
-              scrollbarWidth: 'none'
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none'
             }}
           >
+            <style>
+              {`
+                div::-webkit-scrollbar {
+                  display: none;
+                }
+              `}
+            </style>
             <AnimatePresence>
               {messages.map((message, index) => (
                 <motion.div
@@ -424,16 +427,12 @@ const H5ChatDialog = ({ onClose }: { onClose: () => void }) => {
               className={inter.className}
               style={{ 
                 flexGrow: 1, 
-                padding: '12px 20px', 
+                padding: window.innerWidth <= 768 ? '12px 15px' : '12px 20px', 
                 borderRadius: '25px', 
                 border: '1px solid #66fcf1',
                 backgroundColor: '#1f1f1f',
                 color: '#ffffff',
-                fontSize: '16px',
-                '@media (max-width: 768px)': {
-                  padding: '12px 15px',
-                  fontSize: '14px'
-                }
+                fontSize: window.innerWidth <= 768 ? '14px' : '16px'
               }}
               disabled={isThinking}
             />

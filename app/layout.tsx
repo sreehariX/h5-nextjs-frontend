@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Carrois_Gothic } from 'next/font/google'
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/next';
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -36,6 +37,7 @@ export default function RootLayout({
         className={`${bebasNeue.variable} ${carroisGothic.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

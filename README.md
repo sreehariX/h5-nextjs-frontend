@@ -11,12 +11,48 @@ This is the main source code repository for [H5 Website]. It contains both the N
 [Getting Started]: #quick-start
 [Hosting]: #hosting
 
-## Why H5 Website?
+## Features and tech stack?
 
 - **Modern Stack:** Built with Next.js 14 and FastAPI, offering server-side rendering and efficient API handling
 - **AI Assistant:** Integrated Gemini AI for intelligent hostel-related queries
 - **Interactive UI:** Framer Motion animations, responsive design, and dark mode support
 - **Vector Search:** ChromaDB for efficient information retrieval
+
+
+## Code Overview
+
+This section explains a brief code overview of main pages and components
+
+### Pages
+
+- **Home Page** (`app/home/page.tsx`): The main landing page introducing Hostel 5, featuring sections for about, activities, and more.
+- **Technicals Page** (`app/technicals/page.tsx`): Highlights technical activities and events hosted by the hostel.
+- **Sports Page** (`app/sports/page.tsx`): Showcases sports events and activities, encouraging participation and support.
+- **Culturals Page** (`app/culturals/page.tsx`): Dedicated to cultural events, showcasing the vibrant cultural life at Hostel 5.
+- **FAQs Page** (`app/faqs/page.tsx`): Provides answers to frequently asked questions, helping users find information quickly.
+- **Contact Page** (`app/contact/page.tsx`): Contains contact information and a team section, allowing users to reach out for more details.
+- **Mess Menu Page** (`app/messmenu/page.tsx`): Displays the meal timings and menu options available at the hostel mess.
+
+### Components
+
+- **MainLayout** (`app/components/MainLayout.tsx`): The primary layout component that wraps around all pages, including navigation and footer.
+- **CardsSection** (`app/components/CardsSection.tsx`): Displays a series of cards highlighting different aspects of hostel life, such as sports, culturals, and technicals.
+- **Navigation** (`app/components/Navigation.tsx`): Manages the top navigation bar across the site.
+- **H5ChatDialog** and **H5ChatButton**: Components for the chat interface, allowing users to interact with the AI assistant.
+- **EventCard** (`app/components/EventCard.tsx`): Used to display individual events with images and descriptions.
+- **LoadingScene** (`app/components/LoadingScene.tsx`): Manages the loading animations and transitions between sections.
+
+### Styles
+
+- **Global Styles** (`app/styles/globals.css`): Contains global CSS variables and base styles applied throughout the application.
+- **Page-specific Styles**: Each page and component has its own CSS file, such as `home.css`, `cards.css`, `layout.css`, and more, ensuring modular and maintainable styling.
+
+
+### Analytics
+
+- Integrated with Vercel Analytics to track user interactions and page views, providing insights into user behavior.
+
+
 
 ## Quick Start
 
@@ -97,6 +133,13 @@ This is the main source code repository for [H5 Website]. It contains both the N
 - **Vector Search**: Efficient information retrieval using ChromaDB
 - **Markdown Support**: Rich text formatting for announcements and FAQs
 
+## AI chatbot implementation
+- We have a ContentForRag.csv file which contains content about hostel then we vectorize them using gemini embeddings model
+- Then do a cosine similarity between the user and and the vectors we have 
+- We pick the to 3 vectors and pass that vectors content to gemini flash model to get a summarized response 
+- The content is breaked into chunks if it is above 2000 tokens because gemini embeddings model only accepts approx 2000 tokens
+- We get the most accuracy by doing this Retrieval-Augmented Generation (RAG) appraoch 
+
 ## Tech Stack
 
 - **Frontend**: Next.js 14, Framer Motion, TailwindCSS
@@ -108,15 +151,15 @@ This is the main source code repository for [H5 Website]. It contains both the N
 ## Hosting 
 
 ### frontend
-- Frontend is currently hosted on vercel will be hosted on gymkhana.iitb.ac.in server soon
+- Frontend is currently hosted on vercel we will shift to gymkhana ones their servers are ready
 
 
 ### backend
 - For chatbot we are using chromadb,gemini api and fastapi
-- The fastapi is running on a azure vm
+- The fastapi is running on a azure vm we deployed it .
 - It is configured using apache server
 
 
 ## License
 
-Not yet decided will be soon
+MIT LICENSE

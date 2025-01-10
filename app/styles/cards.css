@@ -69,6 +69,7 @@
   line-height: 1;
   color: #ffffff;
   transform-style: preserve-3d;
+  white-space: nowrap;
 }
 
 .global-headline-l {

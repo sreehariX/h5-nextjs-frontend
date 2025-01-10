@@ -26,7 +26,7 @@ Don't miss this thrilling finale! Free up your evening, gather your friends, and
 
 See you there!
 
-Add this in sports page`
+`
   },
   
 ]

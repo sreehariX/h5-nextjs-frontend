@@ -1,96 +1,57 @@
 'use client'
 
 import MainLayout from '../components/MainLayout'
-import Image from 'next/image'
+import Gallery from 'react-photo-gallery'
+import { motion } from 'framer-motion'
 import '../styles/gallery.css'
 
 const images = [
-  '/images/starterpage/startpage_1.jpeg',
-  '/images/starterpage/startpage_2.jpeg',
-  '/images/studentandcoolimages/holy.jpg',
-  
-  '/images/starterpage/startpage_4.jpeg',
-  '/images/starterpage/startpage_5.jpeg',
-  //panorama
-  '/images/studentandcoolimages/old.jpg',
-  
-  '/images/studentandcoolimages/newyear.jpg',
-  '/images/starterpage/startpage_3.jpeg',
-
-  '/images/studentandcoolimages/insync.jpg',
-  
-  '/images/studentandcoolimages/spphoto.jpg',
-  '/images/studentandcoolimages/h5_logo.jpg',
-  
- 
-
-  
+  { src: '/images/starterpage/startpage_1.jpeg', width: 5, height: 3 },
+  { src: '/images/starterpage/startpage_2.jpeg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/holy.jpg', width: 4, height: 3 },
+  { src: '/images/starterpage/startpage_4.jpeg', width: 5, height: 3 },
+  { src: '/images/starterpage/startpage_5.jpeg', width: 6, height: 3 },
+  { src: '/images/studentandcoolimages/old.jpg', width: 16, height: 9 },
+  { src: '/images/studentandcoolimages/newyear.jpg', width: 4, height: 3 },
+  { src: '/images/starterpage/startpage_3.jpeg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/insync.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/spphoto.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/h5_logo.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/cool_1.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/cool_2.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/cool_3.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/cool_4.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/cool_5.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/cool_6.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/cool_7.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/cool_8.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/cool_9.jpg', width: 4, height: 3 },
+  { src: '/images/studentandcoolimages/cool_10.jpg', width: 4, height: 3 },
 ]
 
-export default function Gallery() {
+const rowVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { 
+    opacity: 1, 
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeIn"
+    }
+  }
+}
+
+export default function GalleryPage() {
   return (
     <MainLayout>
-      <div className="gallery-container">
-        {/* Top row */}
-        <div className="gallery-row small-squares">
-          {images.slice(0, 5).map((src, index) => (
-            <div key={index} className="gallery-item small">
-              <Image
-                src={src}
-                alt={`Gallery image ${index + 1}`}
-                fill
-                className="gallery-image"
-              />
-            </div>
-          ))}
-        </div>
-
-        
-        <div className="gallery-row panorama">
-          <div className="gallery-item wide">
-            <Image
-              src={images[5]}
-              alt="Panorama view"
-              fill
-              className="gallery-image"
-            />
-          </div>
-        </div>
-
-        
-        <div className="gallery-grid">
-          {images.slice(6).map((src, index) => (
-            <div 
-              key={index} 
-              className={`gallery-item ${index % 3 === 1 ? 'wide' : 'normal'}`}
-            >
-              <Image
-                src={src}
-                alt={`Gallery image ${index + 7}`}
-                fill
-                className="gallery-image"
-              />
-            </div>
-          ))}
-        </div>
-
-        
-        <div className="gallery-row large-images">
-          {images.slice(11).map((src, index) => (
-            <div 
-              key={index} 
-              className="gallery-item large"
-            >
-              <Image
-                src={src}
-                alt={`Gallery image ${index + 12}`}
-                fill
-                className="gallery-image"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      <motion.div 
+        className="gallery-container"
+        initial="hidden"
+        animate="show"
+        variants={rowVariants}
+      >
+        <Gallery photos={images} />
+      </motion.div>
     </MainLayout>
   )
 }

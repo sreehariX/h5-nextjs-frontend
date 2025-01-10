@@ -105,6 +105,11 @@ const ContactOverlay = ({ phone }: { phone?: string }) => {
 
 const MemberCard = ({ member, variants }: { member: TeamMember, variants: any }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleToggleOverlay = () => {
+    setIsClicked(!isClicked);
+  };
 
   return (
     <motion.div 
@@ -115,18 +120,19 @@ const MemberCard = ({ member, variants }: { member: TeamMember, variants: any })
         className="member-image-container"
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
+        onClick={handleToggleOverlay}
       >
         <motion.img 
           src={member.image} 
           alt={member.name} 
           className="member-image"
           animate={{ 
-            scale: isHovered ? 1.1 : 1 
+            scale: isHovered || isClicked ? 1.1 : 1 
           }}
           transition={{ duration: 0.3 }}
         />
         <AnimatePresence>
-          {isHovered && (
+          {(isHovered || isClicked) && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

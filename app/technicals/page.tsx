@@ -50,7 +50,7 @@ export default function TechnicalsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold text-white text-transparent">
             Technical Activities
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mt-4 rounded-full" />

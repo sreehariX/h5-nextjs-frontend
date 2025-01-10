@@ -31,7 +31,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
               <li><a href="/home" className="footer-link">home</a></li>
               <li><a href="/gallery" className="footer-link">Gallery</a></li>
               <li><a href="/contact" className="footer-link">Contact</a></li>
-              <li><a href="/mess-menu" className="footer-link">Mess Menu</a></li>
+              <li><a href="/messmenu" className="footer-link">Mess Menu</a></li>
             </ul>
           </div>
           <div className="footer-section">

@@ -63,6 +63,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           </div>
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} Penthouse Hostel-5. All rights reserved.</p>
+          <p>Made with 💖 by <a href="https://x.com/sreehariX" className="footer-link">Sreehari</a>, <a href="https://github.com/Divyanshu0311" className="footer-link">Divyanshu</a> with designer Parv Agarwal</p>
         </div>
       </footer>
     </div>

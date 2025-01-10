@@ -4,8 +4,8 @@ import MainLayout from '../components/MainLayout'
 import Gallery from 'react-photo-gallery'
 import { motion } from 'framer-motion'
 import '../styles/gallery.css'
-import { useState } from 'react'
-import Modal from 'react-modal'
+import { useSearchParams, useRouter } from 'next/navigation'
+import { Suspense } from 'react'
 
 const images = [
 
@@ -49,19 +49,26 @@ const rowVariants = {
   }
 }
 
-export default function GalleryPage() {
-  const [selectedImage, setSelectedImage] = useState(null)
+function GalleryContent() {
+  const router = useRouter()
+  const searchParams = useSearchParams()
+  const selectedImage = searchParams.get('image')
 
-  const openModal = (event, { photo }) => {
-    setSelectedImage(photo.src)
+  const openModal = (
+    event: React.MouseEvent<Element, MouseEvent>, 
+    { photo }: { photo: { src: string } }
+  ) => {
+    const params = new URLSearchParams(searchParams.toString())
+    params.set('image', photo.src)
+    router.push(`?${params.toString()}`)
   }
 
   const closeModal = () => {
-    setSelectedImage(null)
+    router.back()
   }
 
   return (
-    <MainLayout>
+    <>
       <motion.div 
         className="gallery-container"
         initial="hidden"
@@ -71,24 +78,31 @@ export default function GalleryPage() {
         <Gallery photos={images} onClick={openModal} />
       </motion.div>
 
-      <Modal
-        isOpen={!!selectedImage}
-        onRequestClose={closeModal}
-        contentLabel="Image Modal"
-        className="modal"
-        overlayClassName="overlay"
-      >
-        {selectedImage && (
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 mt-20"
+             onClick={closeModal}>
           <motion.img 
             src={selectedImage} 
             alt="Selected" 
+            className="max-h-[calc(100vh-120px)] max-w-[90vw] object-contain rounded-xl"
+            onClick={(e) => e.stopPropagation()}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.3 }}
           />
-        )}
-      </Modal>
-    </MainLayout>
+        </div>
+      )}
+    </>
   )
+}
+
+export default function GalleryPage() {
+  return (
+    <MainLayout>
+      <Suspense fallback={<div>Loading...</div>}>
+        <GalleryContent />
+      </Suspense>
+    </MainLayout>
+  )
 }

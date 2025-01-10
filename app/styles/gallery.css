@@ -22,13 +22,12 @@ img:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 90%;
-  max-height: 90%;
-
+  max-height: calc(100vh - 120px);
+  margin-top: 2rem;
   padding: 1rem;
   overflow: auto;
   z-index: 1001;
 
- 
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; 
 }
@@ -51,6 +50,7 @@ img:hover {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 12px;
 }
 
 @media (max-width: 768px) {
@@ -60,6 +60,6 @@ img:hover {
   
   .modal {
     max-width: 95%;
-    max-height: 95%;
-  }
+    max-height:95%;
+}
 }

@@ -15,7 +15,7 @@ const roboto_mono = Roboto_Mono({ subsets: ['latin'] });
 
 const exampleQuestions = [
   "What's on today's lunch menu?",
-  "What are notable alumni of H5?",
+  "Who are notable alumni of H5?",
   "what is female visiting policy?",
   "Why is H5 called penthouse?"
 ];

@@ -17,20 +17,19 @@ img:hover {
 }
 
 .modal {
-  position: relative;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 90%;
-  max-height: 90%;
-
-  padding: 1rem;
-  overflow: auto;
-  z-index: 1001;
-
- 
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; 
+  max-height: 80vh; /* Set the maximum height */
+  width: auto; /* Maintain aspect ratio */
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent; /* Optional: Background color */
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .modal::-webkit-scrollbar {
